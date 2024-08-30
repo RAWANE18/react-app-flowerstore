@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Herr+Von+Muellerhoff&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap");
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+ background-color: rgba(253, 239, 239, 0.641);
+ backdrop-filter: blur(10px);
+ z-index: 2;
+}
+
+.logo {
+  margin-right: auto;
+  font-family: "Herr Von Muellerhoff", cursive;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  color: #d1a4a4;
+ position: absolute;
+ left: 0;
+ padding: 0px 0px 0px 20px;
+ margin-top: 0;
+}
+
+#MenuItems {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+#MenuItems a {
+  margin-right: 30px;
+}
+nav li {
+  height: 50px;
+}
+nav a {
+  display: flex;
+  align-items: center;
+  color: rgb(209, 164, 164);
+  text-decoration: none;
+  padding: 15px;
+}
+ul {
+  list-style: none;
+  position: relative;
+
+}
+
+.cart-length {
+  position: absolute;
+  top: 30px;
+  right: 67px;
+  background-color: rgb(138, 5, 63);
+  color: white;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 25%;
+  z-index: 3;
+  border-radius: 15px;
+  background-color: #f1eeeecf;
+
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+.sidebar a {
+  margin-left: 40%;
+font-size: 20px;
+}
+
+.menuButton {
+  display: none;
+  position: absolute;
+  top: 23px;
+color: rgb(209, 164, 164);
+
+}
+#icon-card{
+  margin-right: 25px;
+ 
+}
+.sidebar.show {
+    display: block;
+  }
+
+@media (max-width: 867px) {
+  .hideOnmobile {
+    display: none;
+  }
+  .menuButton {
+    display: block;
+  }
+  #MenuItems a {
+    margin-right: 0;
+  }
+  .container h1 {
+    font-size: 2rem;
+  }
+  .container p {
+    font-weight: 200;
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 400px) {
+  .sidebar {
+    width: 25%;
+    height: 100vh;
+  }
+  .sidebar a {
+    margin-left: 30%;
+  }
+  
+}

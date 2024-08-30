@@ -1,0 +1,56 @@
+@import "tw-elements-react/dist/css/tw-elements-react.min.css";
+.container-footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 50px; 
+    background-color: #f9f9f9;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-top: 3px solid #8a053f;
+    height: 200px;
+}
+
+.section-1,
+.section-2,
+.section-3 {
+    flex: 1;
+    margin: 10px 20px; 
+    min-width: 200px; 
+}
+
+.section-1 {
+    text-align: left; 
+}
+
+.section-2 {
+    text-align: center; 
+}
+
+.section-3 {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px; 
+}
+
+.section-3 a {
+    transition: transform 0.3s ease; 
+}
+
+.section-3 a:hover {
+    transform: scale(1.1); 
+}
+
+#logo {
+    font-family: "Herr Von Muellerhoff", cursive;
+    font-size: 32px; 
+    color: #d1a4a4; 
+}
+
+
+
+.bg-neutral-200 {
+    background-color: #fff;
+    border-top: 1px solid #706f70;
+}

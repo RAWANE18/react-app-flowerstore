@@ -1,0 +1,56 @@
+.product{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   height: 470px;
+   gap: 30px;
+   margin: 130px ;
+   border: 1px solid;
+   padding: 70px;
+   position: relative;
+}
+.product img{
+    width:300px ;
+    height: 300px;
+
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+}
+.price{
+    color: rgb(169, 168, 168);
+}
+.product button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 70px;
+    margin-top: 125px;
+    background-color: rgb(238, 224, 224);
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+}
+form h4{
+    color: rgb(209, 164, 164);
+    font-weight: 300;
+    width: 600px;
+    margin-top: 20px;
+}
+form textarea{
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgb(209, 164, 164);;
+    color: rgb(8, 7, 7);
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 50px;
+    max-height: 50px;
+    
+}
