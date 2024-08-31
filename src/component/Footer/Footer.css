@@ -10,8 +10,12 @@
     border-top-left-radius: 40px;
     border-top: 3px solid #8a053f;
     height: 200px;
-}
 
+}
+footer{
+  
+    bottom: 0;
+}
 .section-1,
 .section-2,
 .section-3 {

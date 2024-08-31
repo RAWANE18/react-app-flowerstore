@@ -1,0 +1,147 @@
+
+
+.mySwiper {
+width: 100wh;
+height: 630px;
+filter: grayscale(40%) brightness(1.2);
+
+
+}
+.swiper-button-prev, .swiper-button-next{
+    color: #d1a4a4;
+}
+.swiper-pagination-bullet-active {
+    background-color: #d1a4a4;
+}
+.swiper-slider{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.slider-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 85%;
+    width: 75%;
+    border-radius: 25px;
+    backdrop-filter: blur(15px);
+    gap: 30px;
+}
+.slider-content h1{
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.6rem;
+     color: #f4c8c8;
+}
+.slider-content p{
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #f8e0e0;
+   
+}
+.swiper-customers{
+    position: relative;
+}
+.customers{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: #fff;
+    height: 70%;
+    width: 50%;
+    border: 2px dashed #8a053f;
+    border-radius: 20px;
+    padding: 10px;
+}
+.customers h1{
+color: #8a053f;
+font-size: 2.4rem;
+}
+.customers p{
+    color: #8a053f;
+    font-size: 1.1rem;
+}
+
+
+.button-65 {
+    appearance: none;
+    backface-visibility: hidden;
+    background-color: #d1a4a4;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    height: 50px;
+    letter-spacing: normal;
+    line-height: 1.5;
+    outline: none;
+    overflow: hidden;
+    padding: 14px 30px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+  }
+  
+  .button-65:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: #bd8787;
+    box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: .35s;
+  }
+  
+  .button-65:hover:after {
+    opacity: .5;
+  }
+  
+  .button-65:active {
+    box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
+    transform: translateY(2px);
+    transition-duration: .35s;
+  }
+  
+  .button-65:active:after {
+    opacity: 1;
+  }
+  
+  @media (min-width: 768px) {
+    .button-65 {
+      padding: 14px 22px;
+      width: 176px;
+    }
+  }
+  .btn1{
+    background-color: hsl(0, 0%, 100%);
+    color: #bd8787;
+  }
+  .btn1:hover{
+    background-color: #bd8787;
+    color:hsl(0, 0%, 100%) ;
+  }
+  .btn2{
+    background-color: #8a053f;
+    
+   
+  }
+  .btn2:hover{
+  background-color: #aa064d;
+color: #fff;
+  }

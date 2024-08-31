@@ -1,0 +1,34 @@
+.testimonials-section {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  .testimonials-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonials-paragraph {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .testimonials-animation {
+    margin-bottom: 2rem;
+  }
+  
+  .testimonials-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .testimonials-button:hover {
+    background-color: #0056b3;
+  }
+  
