@@ -35,7 +35,11 @@ border-radius: 50%;
 color: #fff;
 }
 .products-info{
+
     position: absolute;
-    bottom: 50px;
+    bottom: 20px;
     left: 20px;
+}
+.products-info h3{
+  font-size: 1.2rem;
 }

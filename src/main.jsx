@@ -9,7 +9,6 @@ import MainLayout from './MainLayout.jsx';
 import Home from './pages/Home/Home.jsx'
 import Contact from './pages/Contact/Contact.jsx'
 import Account from './pages/Account/Account.jsx'
-
 import Products from './pages/Products/Products.jsx';
 import Product from './pages/Product/Product.jsx'
 import { Provider } from 'react-redux';
@@ -21,7 +20,7 @@ const router = createBrowserRouter([
     element: <MainLayout/>,
     children:[
       {
-        path:"home",
+        path:"/",
         element:<Home/>
       },
       {

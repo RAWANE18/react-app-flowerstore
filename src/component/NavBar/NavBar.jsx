@@ -17,13 +17,13 @@ export default function NavBar() {
       <nav>
         <ul id="MenuItems">
         <li >
-        <Link to="/home" className='logo' >
+        <Link to="/" className='logo' >
           
            Lily Lane
           </Link>
           </li>
           <li className="hideOnmobile">
-            <Link to="/home" className="active">
+            <Link to="/" className="active">
               Home
             </Link>
           </li>
@@ -57,7 +57,7 @@ export default function NavBar() {
 
         <ul>
           <li>
-            <Link to="/home" className="active">
+            <Link to="/" className="active">
               Home
             </Link>
           </li>

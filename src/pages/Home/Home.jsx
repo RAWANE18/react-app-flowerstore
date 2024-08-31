@@ -2,7 +2,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
 import flower21 from "../../assets/rosesbg.jpeg";
 import flower20 from "../../assets/OIG12.jpeg";
 import flower22 from "../../assets/sidegirl.jpg";
@@ -11,6 +10,9 @@ import "./Home.css";
 import "swiper/css/autoplay";
 import { Link } from "react-router-dom";
 import Testemonials from "../../component/Testemonials/Testemonials";
+import { HashLink } from "react-router-hash-link";
+import About from "../../component/About/About";
+
 export default function Home() {
   return (
     <div style={{ height: "100%", marginTop: "72px" }}>
@@ -72,7 +74,7 @@ export default function Home() {
               directions to our location. We can't wait to see you!
             </p>
             <button className="button-65 btn1">Get Directions</button>
-          </div>{" "}
+          </div>
         </SwiperSlide>
         <SwiperSlide className="swiper-customers"
           style={{
@@ -86,14 +88,14 @@ export default function Home() {
           </h1>
           <p>We’re proud to share the words of our satisfied customers. Their experiences reflect our commitment to quality and service. Read their testimonials to see why we’re the trusted choice for beautiful flowers and exceptional service.
           </p>
-          <button className="button-65 btn2">Read Testimonials</button>
+          <HashLink to="#testimonials">
+          <button className="button-65 btn2">Read Testimonials</button></HashLink>
           </div> </SwiperSlide>
-        {/* */}
-      </Swiper>
-      <div style={{height:"100vh",}}>
-        <Testemonials/>
-         </div>
       
+      </Swiper>
+      <About/>
+        
+      <Testemonials/>
     </div>
   );
 }

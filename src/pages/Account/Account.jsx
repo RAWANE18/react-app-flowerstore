@@ -23,7 +23,7 @@ const Account= () => {
   };
 
   return (
-    <div className="row">
+    <div className="account">
       <div className="col-md-6 mx-auto p-0">
         <div className="card">
           <div className="login-box">
@@ -77,7 +77,7 @@ const Account= () => {
                         <label htmlFor="check"><span className="icon"></span> Keep me Signed in</label>
                       </div>
                       <div className="group">
-                        <Link to={'/home'} className="button" value="Sign In" >Sing In</Link>
+                        <Link to={'/'} className="button" value="Sign In" >Sing In</Link>
                       </div>
                       <div className="hr"></div>
                       <div className="foot">
@@ -122,7 +122,7 @@ const Account= () => {
                         />
                       </div>
                       <div className="group">
-                      <Link to={'/home'} className="button"  value="Sign Up" >Sign Up</Link>
+                      <Link to={'/'} className="button"  value="Sign Up" >Sign Up</Link>
                       </div>
                       <div className="hr"></div>
                       <div className="foot">

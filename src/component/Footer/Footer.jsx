@@ -7,7 +7,7 @@ export default function Footer() {
        <footer>
     <div className='container-footer' >
      <div className="section-1">
-<Link to={'/home'}>
+<Link to={'/'}>
           <h5 id='logo'>Lily Lane</h5>
           </Link>
           
