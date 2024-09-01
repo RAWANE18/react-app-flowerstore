@@ -1,21 +1,14 @@
 import { useDispatch, useSelector } from "react-redux";
-import { removeFromCart } from "../../redux/CartSlice";
+import { removeFromCart ,addTocart,decrementFromCart } from "../../redux/CartSlice";
 import "./ShoppingCart.css";
 import { LiaChevronDownSolid, LiaChevronUpSolid } from "react-icons/lia";
-import { useState } from "react";
 import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
 export default function ShoppingCard() {
   const cart = useSelector((state) => state.cart.products);
   const total = useSelector((state) => state.cart.total);
   const dispatch = useDispatch();
-  const [count, setCount] = useState(1);
-  console.log(cart);
-  const upaddtocart = () => {
-    setCount(count + 1);
-  };
-  const downremovecart = () => {
-    setCount(count - 1);
-  };
+  
   function handleButtonClick() {
   const { value: text } = Swal.fire({
     input: "textarea",
@@ -63,19 +56,19 @@ export default function ShoppingCard() {
               <div className="count">
                 <LiaChevronUpSolid
                   className="amount-btn"
-                  onClick={upaddtocart}
+                  onClick={() => dispatch(addTocart(flower))}
                 />
-                <p>{count}</p>
+                <p>{flower.quantity}</p>
                 <LiaChevronDownSolid
                   className="amount-btn"
-                  onClick={downremovecart}
+                  onClick={() => dispatch(decrementFromCart(flower))}
                 />
               </div>
             </div>
           ))}
           <div className="bottom">
             <p>Total : <br /><span>${total.toFixed(2)}</span> </p>
-            <button>Buy</button>
+          <Link to={"/payment"} >  <button>Buy</button></Link>
           </div>
         </div>
       )}

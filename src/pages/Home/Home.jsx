@@ -101,29 +101,29 @@ export default function Home() {
       <div className="services-main">
         <h1>Get in Touch with Us</h1>
         <p>Stay connected with us by signing up for our newsletter! Be the first to know about our latest collections, special offers, and upcoming events.</p>
-        <button className="button-65 btn2">Sign Up</button>
+      <Link to={"/account"}> <button className="button-65 btn2">Sign Up</button></Link> 
       </div>
 
       <div className="services-items">
         <ScrollAnimation className="items first" animateIn="animate__backInLeft">
-          <div >
+          
             <h3>Exclusive Offers:</h3> 
             <p>Receive special promotions and discounts available only to our subscribers.</p>
-          </div>
+        
         </ScrollAnimation>
         
         <ScrollAnimation className="items second" animateIn="animate__backInRight">
-          <div >
+          
             <h3>Flower Care Tips:</h3>  
             <p>Get expert advice on how to keep your flowers fresh and vibrant.</p>
-          </div>
+          
         </ScrollAnimation>
         
         <ScrollAnimation className="items third" animateIn="animate__backInLeft">
-          <div >
+         
             <h3>Event Invitations:</h3> 
             <p>Be invited to our exclusive events, floral workshops, and more.</p> 
-          </div>
+        
         </ScrollAnimation>
       </div>
     </div>

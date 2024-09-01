@@ -65,6 +65,10 @@ width: 100px;
   flex-direction: column;
   position: absolute;
   right: 0;
+top: 30px;
+}
+.count p{
+  height: 15px;
 }
 .amount-btn {
   width: 1.5rem;
@@ -72,6 +76,7 @@ width: 100px;
   border: none;
   cursor: pointer;
   color: #d1a4a4;
+
 }
 .bottom{
   width: 800px;

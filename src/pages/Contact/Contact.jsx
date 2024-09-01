@@ -10,12 +10,13 @@ export default function Contact() {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_dsvg0ok', 'template_x8zv8ei', form.current, {
+      .sendForm('service_lba0sgk', 'template_7qr11ik', form.current, {
         publicKey: 'wbrU7HM66qEs4PtE-',
       })
       .then(
         () => {
           console.log('SUCCESS!');
+          form.current.reset(); 
         },
         (error) => {
           console.log('FAILED...', error.text);

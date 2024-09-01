@@ -28,7 +28,7 @@ export default function Location() {
           style={{ border: "0", width: "700px", height: "450px" }}
           allowfullscreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+        
         ></iframe>
       </div>
     </div>

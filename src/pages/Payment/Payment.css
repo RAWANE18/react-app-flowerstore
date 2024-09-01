@@ -1,0 +1,75 @@
+.cridt-card{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+ 
+}
+
+.payment-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .payment-form input[type="text"],
+  .payment-form input[type="tel"],
+  .payment-form input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #de9191;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Focus state for inputs */
+  .payment-form input[type="text"]:focus,
+  .payment-form input[type="tel"]:focus,
+  .payment-form input[type="number"]:focus {
+    border-color: #de9191;
+    outline: none;
+    box-shadow: 0 0 5px rgba(209, 70, 160, 0.5);
+  }
+  
+  /* Button styles */
+  .payment-form .btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #de9191;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px rgba(209, 70, 160, 0.5);
+  }
+  
+  .payment-form .btn:hover {
+    background-color: #de9191;
+    box-shadow: 0 0 15px rgba(209, 70, 160, 0.5);
+  }
+  
+  
+  @media (max-width: 576px) {
+    .payment-form {
+      padding: 15px;
+    }
+  
+    .payment-form input[type="text"],
+    .payment-form input[type="tel"],
+    .payment-form input[type="number"] {
+      font-size: 14px;
+    }
+  
+    .payment-form .btn {
+      font-size: 14px;
+    }
+  }
+  
