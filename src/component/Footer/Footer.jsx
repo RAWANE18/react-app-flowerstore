@@ -16,7 +16,7 @@ export default function Footer() {
 <div className='section-2'>
     <h5><b>Contact Us :</b> </h5>
 <p>Email : LilyLane@gmail.com</p>
-<p>Phone : +213 699 543 210</p>
+<p>Phone :+1 310 555-6789</p>
 </div>
        
        <div className='section-3'>
