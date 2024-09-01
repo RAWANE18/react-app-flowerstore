@@ -10,7 +10,9 @@ export default function NavBar() {
   function toggleSidebar() {
     setShowSidebar(!showSidebar);
   }
-  const cartlenght = useSelector((state) => state.cart.products.length);
+  const totalItems = useSelector((state) => 
+    state.cart.products.reduce((total, product) => total + (product.quantity || 1), 0)
+  );
   return (
 
     <div>
@@ -41,7 +43,7 @@ export default function NavBar() {
           
             <FaShoppingCart id='icon-card'/>
         
-          {cartlenght > 0 && <div className="cart-length">{cartlenght}</div>}
+          {totalItems  > 0 && <div className="cart-length">{totalItems}</div>}
         </Link>
         </li>
           <li className="menuButton" onClick={toggleSidebar}>
