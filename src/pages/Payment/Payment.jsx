@@ -35,38 +35,22 @@ const Payment = () => {
     const { number, expiry, cvc, name } = state;
 
     if (number.length !== 16) {
-      Swal.fire({
-        icon: 'error',
-        title: 'Invalid Card Number',
-        text: 'Card number must be 16 digits long.',
-      });
+     
       return false;
     }
 
     if (name.trim() === '') {
-      Swal.fire({
-        icon: 'error',
-        title: 'Invalid Name',
-        text: 'Name field cannot be empty.',
-      });
+     
       return false;
     }
 
     if (!/^\d{2}\/\d{2}$/.test(expiry)) {
-      Swal.fire({
-        icon: 'error',
-        title: 'Invalid Expiry Date',
-        text: 'Expiry date must be in MM/YY format.',
-      });
+     
       return false;
     }
 
     if (cvc.length < 3 || cvc.length > 4) {
-      Swal.fire({
-        icon: 'error',
-        title: 'Invalid CVC',
-        text: 'CVC must be 3 or 4 digits long.',
-      });
+    
       return false;
     }
 

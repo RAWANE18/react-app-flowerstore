@@ -41,7 +41,7 @@ export default function ShoppingCard() {
             <div key={flower.productId} className="item">
               <img
                 src={flower.image}
-                style={{ width: "150px", height: "150px" }}
+             
               />
               <div className="content">
                 <h3>{flower.productName}</h3>

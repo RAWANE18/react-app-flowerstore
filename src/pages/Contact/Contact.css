@@ -8,7 +8,6 @@
 
 .ctn {
   min-height: 100vh;
-  background: rgb(250, 245, 245);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,7 +32,6 @@
   width: 500px;
   text-align: center;
 }
-
 .ctn form input {
   width: 290px;
   height: 40px;
@@ -60,6 +58,7 @@
   font-weight: 300;
   width: 600px;
   margin-top: 20px;
+  font-size: 20px;
 }
 
 .ctn form textarea {
@@ -95,4 +94,77 @@
 
 .ctn form #button:hover {
   opacity: 0.7;
+}
+@media (max-width: 700px) {
+  .ctn form {
+    width: 570px;
+    height: 400px;
+  }
+
+  .ctn form input {
+    width: 190px;
+    height: 20px;
+    font-size: 12px;
+  }
+  .ctn form h4 {
+    width: 400px;
+  }
+  .ctn form textarea {
+    margin-bottom: 0;
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 50px;
+    max-height: 50px;
+  }
+
+  .ctn form #button {
+    margin-right: 300px;
+    height: 30px;
+  }
+}
+@media (max-width: 580px) {
+  .ctn form {
+    width: 370px;
+
+  }
+  .ctn form h1 {
+    font-size: 20px;
+  }
+  .ctn form input {
+    width: 120px;
+  }
+  .ctn form h4 {
+    width: 200px;
+    font-size: 15px;
+  }
+  .ctn form textarea {
+
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 20px;
+    max-height: 20px;
+  }
+  .ctn form #button {
+    margin-right: 200px;
+   width: 90px;
+  }
+}
+@media (max-width: 380px) {
+ 
+  .ctn form {
+    width: 250px;
+height: 300px;
+  }
+  .ctn form input {
+    width: 100px;
+  }
+  .ctn form #button {
+    margin-right: 150px;
+   width: 50px;
+   font-size: 15px;
+  }
+  .ctn form h4 {
+  
+    font-size: 12px;
+  }
 }

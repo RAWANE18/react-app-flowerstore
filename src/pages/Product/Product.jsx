@@ -16,6 +16,7 @@ export default function Product() {
   console.log("product:::", product);
   const dispatch = useDispatch();
   return <>
+  <div className="product-container">
  <div className="product"
        
       >
@@ -29,6 +30,7 @@ export default function Product() {
         <textarea></textarea>
         </form>
         <button onClick={() => dispatch(addTocart(product))}>Add to cart</button>
+      </div>
       </div>
       </div>
   </>;

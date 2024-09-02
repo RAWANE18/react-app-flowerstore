@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-
   width: 100%;
   margin-top: 100px;
 }
@@ -11,7 +10,27 @@
   text-align: center;
 }
 .about-text p{
+
   font-family:Georgia, 'Times New Roman', Times, serif}
 .about-text h1{
   font-family:Georgia, 'Times New Roman', Times, serif
+}
+@media (max-width: 768px) {
+  .about-text{
+    margin:0px 20px;
+  }
+  .about-text p{
+  font-size: 0.8rem;
+  }
+
+}
+@media (max-width: 425px) {
+  .about-text p{
+    font-size: 0.6rem;
+    }
+}
+@media (max-width: 320px) {
+  .about-text p{
+    font-size: 0.5rem;
+    }
 }

@@ -27,8 +27,6 @@
     box-sizing: border-box;
     transition: border-color 0.3s ease;
   }
-  
-  /* Focus state for inputs */
   .payment-form input[type="text"]:focus,
   .payment-form input[type="tel"]:focus,
   .payment-form input[type="number"]:focus {
@@ -36,8 +34,6 @@
     outline: none;
     box-shadow: 0 0 5px rgba(209, 70, 160, 0.5);
   }
-  
-  /* Button styles */
   .payment-form .btn {
     width: 100%;
     padding: 12px;

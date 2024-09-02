@@ -8,11 +8,11 @@
   margin-top: 150px;
   flex-direction: column;
   gap: 20px;
+
 }
 .item {
   display: flex;
-  flex-direction: row;
-  width: 800px;
+  width: 60%;
   margin-top: 20px;
   position: relative;
   gap: 30px;
@@ -29,9 +29,9 @@
   font-style: normal;
   color: rgb(209, 164, 164);
 }
-img {
-  height: 80px;
-  width: 80px;
+.item img {
+  height: 150px;
+  width: 150px;
 }
 
 .content {
@@ -48,14 +48,13 @@ img {
   margin-top: 0.375rem;
 width: 100px;
 }
-.content-text h3 {
+.content h3 {
   font-size: 20px;
   font-weight: 500;
-  letter-spacing: 2px;
   margin-bottom: 5px;
 }
-.content-text p {
-  color: #64748b;
+.content p {
+  color: rgb(169, 168, 168);
 }
 
 .count {
@@ -79,7 +78,7 @@ top: 30px;
 
 }
 .bottom{
-  width: 800px;
+  width: 60%;
   height: 150px;
   display: flex;
   align-items: center;
@@ -87,14 +86,13 @@ top: 30px;
 margin-bottom: 50px;
 }
 .bottom p{
-  position: absolute;
-  left: 10px;
+  display: flex;
+  justify-content: center;
   font-size: 1.3rem;
-  text-align: center;
-  width: 800px;
+  width: 100%;
 }
 .bottom span{
-  margin-left: 50px;
+margin-left: 10px;
   color: #8a053f;
 }
 .bottom button{
@@ -136,4 +134,45 @@ margin-bottom: 50px;
   border-radius: 5px;
   padding: 10px 20px;
   font-size: 1rem;
+}
+@media (max-width: 920px) {
+.shoppingcards{width: 100%;}
+.content h3{
+  font-size: 15px;
+}
+}
+@media (max-width: 680px) {
+.item{
+  width: 90%;
+}
+}
+@media (max-width: 680px){
+  .item img{
+    height: 100px;
+    width: 100px;
+  }
+}
+@media (max-width: 390px){
+  .item{
+    width: 100%;
+    padding: 0px 5px;
+  }
+  .buttons button {
+  width: 120px;
+  text-align: left;
+ margin-top: 0;
+ font-size:0.6rem ;
+  }
+  .content{
+    gap: 0;
+  }
+  .content h3{
+    font-size: 12px;
+    margin-bottom: 2px;
+  }
+  .bottom p{
+
+    font-size: 0.8rem;
+
+  }
 }

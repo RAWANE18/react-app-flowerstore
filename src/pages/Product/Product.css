@@ -1,17 +1,23 @@
+.product-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 .product{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-   height: 470px;
+   height: 90%;
    gap: 30px;
-   margin: 130px ;
+   margin: 130px 50px;
+   width: 90%;
    border: 1px solid;
    padding: 70px;
    position: relative;
 }
 .product img{
-    width:300px ;
-    height: 300px;
+    width:350px ;
+    height: 350px;
 
 }
 .text{
@@ -31,12 +37,13 @@
     background-color: rgb(238, 224, 224);
     position: absolute;
     right: 50px;
-    bottom: 30px;
+    bottom: 10px;
 }
 form h4{
     color: rgb(209, 164, 164);
     font-weight: 300;
-    width: 600px;
+    font-size: 20px;
+    width: 80%;
     margin-top: 20px;
 }
 form textarea{
@@ -48,9 +55,49 @@ form textarea{
     font-size: 15px;
     padding: 10px;
     outline: none;
-    min-width: 600px;
-    max-width: 600px;
+    min-width: 100%;
+    max-width:  100%;
     min-height: 50px;
     max-height: 50px;
+ 
+}
+@media (max-width: 966px) {
+    .product{
+        flex-direction: column;
+        padding: 10px 70px 70px 70px;
+      
+      
+    }
+    .product img{
+        width:100%;
+        height:10%;
     
+    }
+}
+@media (max-width: 560px) {
+    .product{
+       
+        padding: 10px 30px 70px 30px;
+      
+    }
+    .text{
+        gap: 5px;
+        font-size: 10px;
+    }
+    .text h3{
+        font-size: 15px;
+    }
+    form h4{
+        font-size: 15px;
+    }
+}
+@media (max-width: 431px) {
+    .product button{
+        right: 10px;
+        padding: 10px 20px;
+            }
+    form textarea{
+        min-height: 20px;
+    max-height: 20px;
+    }
 }

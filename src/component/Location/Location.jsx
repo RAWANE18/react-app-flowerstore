@@ -25,7 +25,7 @@ export default function Location() {
       <div className="location">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d204393.45544129418!2d-119.80048009999999!3d36.826960199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8094673eb9ddbfff%3A0x2e0e44386edd3e59!2sLily%E2%80%99s%20Bouquet!5e0!3m2!1sfr!2sdz!4v1725187678557!5m2!1sfr!2sdz"
-          style={{ border: "0", width: "700px", height: "450px" }}
+          style={{ border: "0" }}
           allowfullscreen=""
           loading="lazy"
         

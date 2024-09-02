@@ -4,7 +4,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import flower21 from "../../assets/rosesbg.jpeg";
 import flower20 from "../../assets/OIG12.jpeg";
-import flower22 from "../../assets/sidegirl.jpg";
+import flower22 from "../../assets/bgsidegirl.jpg";
 import { Autoplay } from "swiper/modules";
 import "./Home.css";
 import "swiper/css/autoplay";
@@ -18,7 +18,7 @@ import Location from "../../component/Location/Location";
 
 export default function Home() {
   return (
-    <div style={{ height: "100%", marginTop: "72px" }}>
+    <div className="main-home" >
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -96,8 +96,9 @@ export default function Home() {
           </div> </SwiperSlide>
       
       </Swiper>
+      
       <About/>
-      <div className="services">
+      {/* <div className="services">
       <div className="services-main">
         <h1>Get in Touch with Us</h1>
         <p>Stay connected with us by signing up for our newsletter! Be the first to know about our latest collections, special offers, and upcoming events.</p>
@@ -126,11 +127,11 @@ export default function Home() {
         
         </ScrollAnimation>
       </div>
-    </div>
+    </div> */}
 
       <Testemonials/>
      <Location/>
         
-    </div>
+     </div>
   );
 }

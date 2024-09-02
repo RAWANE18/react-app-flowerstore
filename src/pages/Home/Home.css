@@ -1,3 +1,8 @@
+.main-home{
+  height: 100%;
+  width: 100wh;
+  margin-top: 72px;
+}
 .mySwiper {
   width: 100wh;
   height: 660px;
@@ -31,7 +36,7 @@
   font-weight: 400;
   font-size: 2.6rem;
   color: #f4c8c8;
-  font-family:Georgia, 'Times New Roman', Times, serif
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .slider-content p {
   text-align: center;
@@ -39,7 +44,7 @@
   font-size: 1.3rem;
   margin-bottom: 20px;
   color: #f8e0e0;
-  font-family:Georgia, 'Times New Roman', Times, serif
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .swiper-customers {
   position: relative;
@@ -58,12 +63,12 @@
 .customers h1 {
   color: #8a053f;
   font-size: 2.4rem;
-  font-family:Georgia, 'Times New Roman', Times, serif
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .customers p {
   color: #8a053f;
   font-size: 1.1rem;
-  font-family:Georgia, 'Times New Roman', Times, serif
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .button-65 {
@@ -150,8 +155,7 @@
   flex-wrap: wrap;
   margin-top: 100px;
   height: 550px;
-  background-color: #ecd5d5;
- 
+  background-color: #f4e7e7;
 }
 .services-main {
   width: 40%;
@@ -162,7 +166,10 @@
   flex-direction: column;
   gap: 40px;
 }
-.services-main h1,p{  font-family:Georgia, 'Times New Roman', Times, serif}
+.services-main h1,
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 
 .services-items {
   position: relative;
@@ -182,8 +189,9 @@
   border-radius: 15px;
   padding: 0px 10px;
 }
-.items h3 , p{
-  font-family:Georgia, 'Times New Roman', Times, serif
+.items h3,
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .first {
   position: absolute;
@@ -202,4 +210,69 @@
   bottom: 20px;
   left: 250px;
   border: 2px dashed #e6c81a;
+}
+@media (max-width: 770px) {
+  .mySwiper {
+
+    height: 580px;
+   
+  }
+  .slider-content h1 {
+    font-size: 2.3rem;
+  }
+  .slider-content p {
+    font-size:1rem;
+  }
+  .customers{
+    width: 60%;
+    top: 20px;
+    left: 20px;
+  }
+  
+}
+@media (max-width: 610px) {
+  .slider-content {
+    gap: 10px;
+  }
+  .customers h1{
+    font-size: 2rem;
+  }
+  .slider-content p {
+    font-size:0.85rem;
+  }
+}
+@media (max-width: 435px) {
+  .mySwiper {
+
+    height: 860px;
+   
+  }
+  .slider-content h1 {
+    font-size: 1.8rem;
+  }
+  .slider-content p {
+    font-size:0.9rem;
+  }
+  .slider-content{
+    height: 60%;
+    width: 90%;
+  }
+    .customers{
+      width: 80%;
+  }
+  .button-65 {
+    height: 40px;
+    padding: 5px 15px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 320px) {
+ 
+  .slider-content{
+    height: 70%;
+    width: 90%;
+  }
+    .customers{
+      width: 80%;
+  }
 }
