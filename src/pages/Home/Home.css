@@ -1,4 +1,4 @@
-.main-home{
+.main-home {
   height: 100%;
   width: 100wh;
   margin-top: 72px;
@@ -149,6 +149,13 @@
   background-color: #aa064d;
   color: #fff;
 }
+.btn3 {
+  background-color: #8a053f;
+}
+.btn3:hover {
+  background-color: #aa064d;
+  color: #fff;
+}
 .services {
   display: flex;
   justify-content: space-around;
@@ -175,11 +182,12 @@ p {
   position: relative;
   width: 40%;
   height: 100%;
+  margin-right: 50px;
 }
 .items {
   background-color: #fff;
   margin-bottom: 20px;
-  width: 400px;
+  width: 65%;
   height: 150px;
   display: flex;
   justify-content: center;
@@ -211,54 +219,138 @@ p {
   left: 250px;
   border: 2px dashed #e6c81a;
 }
-@media (max-width: 770px) {
+@media (max-width: 1125px) {
+  .services-main h1 {
+    font-size: 1.5rem;
+  }
+  .services-main p {
+    font-size: 0.8rem;
+  }
+  .first {
+    top: 70px;
+    left: 0;
+  }
+  .second {
+    top: 215px;
+    left: 70px;
+  }
+  .third {
+    bottom: 50px;
+    left: 190px;
+  }
+  .items {
+    height: 120px;
+  }
+  .items h3 {
+    font-size: 1.2rem;
+  }
+  .items p {
+    font-size: 0.8rem;
+  }
+  .btn3 {
+    height: 40px;
+    width: 130px;
+    padding: 5px 10px;
+  
+  }
+  .services-main {
+    gap: 10px;
+  }
+}
+@media (max-width: 784px) {
+  .items{
+    width: 80%;
+  }
+  .services-main h1 {
+    font-size: 1.2rem;
+  }
+  .services-main p {
+    font-size: 0.6rem;
+  }
+  .items h3 {
+    font-size: 1rem;
+  }
+  .items p {
+    font-size: 0.6rem;
+  }
+  .btn3 {
+    height: 35px;
+    width: 110px;
+   font-size: 11px;
+  }
+  
+  .first {
+    left: 100px;
+  }
+  .second {
+    left: 100px;
+  }
+  .third {
+    left: 100px;
+  }
   .mySwiper {
-
     height: 580px;
-   
   }
   .slider-content h1 {
     font-size: 2.3rem;
   }
   .slider-content p {
-    font-size:1rem;
+    font-size: 1rem;
   }
-  .customers{
+  .customers {
     width: 60%;
     top: 20px;
     left: 20px;
   }
-  
 }
 @media (max-width: 610px) {
+  .first {
+    left: 50px;
+  }
+  .second {
+    left: 50px;
+  }
+  .third {
+    left: 50px;
+  }
   .slider-content {
     gap: 10px;
   }
-  .customers h1{
+  .customers h1 {
     font-size: 2rem;
   }
   .slider-content p {
-    font-size:0.85rem;
+    font-size: 0.85rem;
   }
 }
 @media (max-width: 435px) {
+  .btn3 {
+    height: 20px;
+    width: 90px;
+   font-size: 8px;
+   padding: 2px 5px;
+  }
+  .items h3 {
+    font-size: 0.8rem;
+  }
+  .items p {
+    font-size: 0.5rem;
+  }
   .mySwiper {
-
     height: 860px;
-   
   }
   .slider-content h1 {
     font-size: 1.8rem;
   }
   .slider-content p {
-    font-size:0.9rem;
+    font-size: 0.9rem;
   }
-  .slider-content{
+  .slider-content {
     height: 60%;
     width: 90%;
   }
-    .customers{
-      width: 80%;
+  .customers {
+    width: 80%;
   }
   .button-65 {
     height: 40px;
@@ -267,12 +359,11 @@ p {
   }
 }
 @media (max-width: 320px) {
- 
-  .slider-content{
+  .slider-content {
     height: 70%;
     width: 90%;
   }
-    .customers{
-      width: 80%;
+  .customers {
+    width: 80%;
   }
 }

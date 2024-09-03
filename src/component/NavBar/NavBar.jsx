@@ -54,7 +54,7 @@ export default function NavBar() {
 
       <div className={`sidebar ${showSidebar ? 'show' : ''}`}>
         <div className="close-btn" onClick={toggleSidebar}>
-         <IoMdClose style={{color: "rgb(209, 164, 164)"}}/>
+         <IoMdClose style={{color: "rgb(209, 164, 164)" , fontSize:"20px",margin:"10px"}}/>
         </div>
 
         <ul>

@@ -81,7 +81,7 @@ export default function Products() {
       </div>
       <div className="filter-select">
         <Box sx={{ minWidth: 120 }} className="select-box">
-          <FormControl fullWidth>
+          <FormControl fullWidth  >
             <InputLabel variant="standard" htmlFor="uncontrolled-native">
               Category
             </InputLabel>
@@ -92,12 +92,15 @@ export default function Products() {
                 id: "uncontrolled-native",
               }}
               onChange={handleSelectChange}
+           
             >
-              <option value="All">All</option>
-              <option value="Bouquets">Bouquet</option>
-              <option value="Box Bouquets">Box Bouquet</option>
-              <option value="Balloon Bouquets">Balloon Bouquet</option>
-              <option value="Wedding Bouquets">Wedding Bouquet</option>
+              
+              <option value="All" className="custom-select">All</option>
+        <option value="Bouquets" className="custom-select">Bouquet</option>
+        <option value="Box Bouquets" className="custom-select">Box Bouquet</option>
+        <option value="Balloon Bouquets" className="custom-select">Balloon Bouquet</option>
+        <option value="Wedding Bouquets" className="custom-select">Wedding Bouquet</option>
+     
             </NativeSelect>
           </FormControl>
         </Box>

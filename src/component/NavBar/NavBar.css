@@ -82,7 +82,12 @@ ul {
 }
 .sidebar a {
 font-size: 20px;
+
 }
+.sidebar a:hover {
+
+  color: #8a053f;
+  }
 .sidebar ul{
   display: flex;
   align-items: center;
@@ -104,8 +109,16 @@ color: rgb(209, 164, 164);
 .sidebar.show {
     display: block;
   }
+ 
 
 @media (max-width: 867px) {
+  .cart-length {
+    
+    top: 32px;
+    right: 37px;
+    width: 15px;
+    height: 15px;
+  }
   .hideOnmobile {
     display: none;
   }
@@ -125,6 +138,13 @@ color: rgb(209, 164, 164);
   
 }
 @media (max-width: 560px) {
+  .cart-length {
+    top: 32px;
+    right: 39px;
+    width: 13px;
+    height: 13px;
+    font-size: 10px;
+  }
   .sidebar {
  
     height: 100vh;

@@ -136,6 +136,9 @@ margin-left: 10px;
   font-size: 1rem;
 }
 @media (max-width: 920px) {
+  .empty-card {
+    font-size: 40px;
+  }
 .shoppingcards{width: 100%;}
 .content h3{
   font-size: 15px;
@@ -147,12 +150,19 @@ margin-left: 10px;
 }
 }
 @media (max-width: 680px){
+  .empty-card {
+    font-size: 35px;
+  }
   .item img{
     height: 100px;
     width: 100px;
   }
 }
 @media (max-width: 390px){
+
+  .empty-card {
+    font-size: 25px;
+  }
   .item{
     width: 100%;
     padding: 0px 5px;

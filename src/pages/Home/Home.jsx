@@ -94,15 +94,13 @@ export default function Home() {
           <HashLink to="#testimonials">
           <button className="button-65 btn2">Read Testimonials</button></HashLink>
           </div> </SwiperSlide>
-      
       </Swiper>
-      
       <About/>
-      {/* <div className="services">
+      <div className="services">
       <div className="services-main">
         <h1>Get in Touch with Us</h1>
         <p>Stay connected with us by signing up for our newsletter! Be the first to know about our latest collections, special offers, and upcoming events.</p>
-      <Link to={"/account"}> <button className="button-65 btn2">Sign Up</button></Link> 
+      <Link to={"/account"}> <button className="button-65 btn3">Sign Up</button></Link> 
       </div>
 
       <div className="services-items">
@@ -127,7 +125,7 @@ export default function Home() {
         
         </ScrollAnimation>
       </div>
-    </div> */}
+    </div> 
 
       <Testemonials/>
      <Location/>
