@@ -22,6 +22,7 @@
     "bootstrap": "^5.3.3",
     "clsx": "^2.1.1",
     "framer-motion": "^11.3.30",
+    "jspdf": "^2.5.1",
     "lottie-react": "^2.4.0",
     "mdb-react-ui-kit": "^8.0.0",
     "react": "^18.3.1",

@@ -34,17 +34,19 @@
     outline: none;
     box-shadow: 0 0 5px rgba(209, 70, 160, 0.5);
   }
-  .payment-form .btn {
+  .form-actions .btn {
     width: 100%;
-    padding: 12px;
+    height: 50px;
+    padding: 10px;
     background-color: #de9191;
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 12px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     box-shadow: 0 0 10px rgba(209, 70, 160, 0.5);
+   
   }
   
   .payment-form .btn:hover {

@@ -4,6 +4,7 @@ import "./ShoppingCart.css";
 import { LiaChevronDownSolid, LiaChevronUpSolid } from "react-icons/lia";
 import Swal from "sweetalert2";
 import { Link } from "react-router-dom";
+
 export default function ShoppingCard() {
   const cart = useSelector((state) => state.cart.products);
   const total = useSelector((state) => state.cart.total);
@@ -29,6 +30,7 @@ export default function ShoppingCard() {
   if (text) {
     Swal.fire(text);
   }}
+  
   return (
     <>
       {cart.length === 0 ? (
@@ -66,11 +68,13 @@ export default function ShoppingCard() {
               </div>
             </div>
           ))}
+          
           <div className="bottom">
             <p>Total : <br /><span>${total.toFixed(2)}</span> </p>
           <Link to={"/payment"} >  <button>Buy</button></Link>
+          
           </div>
-        </div>
+            </div>
       )}
     </>
   );

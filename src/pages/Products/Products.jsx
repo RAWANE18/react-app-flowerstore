@@ -58,7 +58,7 @@ export default function Products() {
             <Tab value="one" label="All" onClick={() => filterItems("All")} />
             <Tab
               value="two"
-              label="Bouquets"
+              label="Bouquet"
               onClick={() => filterItems("Bouquets")}
             />
             <Tab
